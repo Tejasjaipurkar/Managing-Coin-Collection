@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Coin Collection Application</title>
+</head>
+<body>
+	<h1>Coin Collection Application</h1>
+	<br><br>
+	<form action="AddCoinServlet" method="post">
+		<table>
+		<tr>
+			<td><lable>Country</lable></td>
+			<td><input type="text" name="country" required></td>
+		</tr>
+		<tr>
+			<td><lable>Denomination</lable></td>
+			<td><input type="text" name="denomination" required></td>
+		</tr>
+		<tr>
+			<td><lable>Year Of Minting</lable></td>
+			<td><input type="number" name="yearOfMinting" required></td>
+		</tr>
+		<tr>
+			<td><lable>Current Value</lable></td>
+			<td><input type="text" name="currentValue" required></td>
+		</tr>
+		<tr>
+			<td><lable>Acquired Date</lable></td>
+			<td><input type="date" name="acquiredDate" required></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="Add Coin"></td>
+			<td><a href="MainPage.html">Back To Home</a></td>
+		</tr>
+		</table>
+	</form>
+	<br>
+	<a href='/ManageCoinCollection/DisplayAllCoins'>See Coin Collection</a>
+</body>
+</html>
